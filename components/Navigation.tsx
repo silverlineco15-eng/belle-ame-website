@@ -3,7 +3,7 @@
 import { Menu, Phone, Scissors, X } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { navLinks, siteConfig } from '@/data/site';
 import { cn } from '@/lib/utils';
 
@@ -11,9 +11,6 @@ export function Navigation() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-charcoal/10 bg-ivory/90 backdrop-blur-xl">
@@ -72,7 +69,7 @@ export function Navigation() {
         <div className="border-t border-charcoal/10 bg-ivory px-4 pb-5 pt-2 shadow-2xl lg:hidden">
           <div className="mx-auto grid max-w-7xl gap-2">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="rounded-2xl px-4 py-3 text-base font-semibold text-charcoal transition hover:bg-pearl">
+              <Link key={link.href} href={link.href} onClick={() => setOpen(false)} className="rounded-2xl px-4 py-3 text-base font-semibold text-charcoal transition hover:bg-pearl">
                 {link.label}
               </Link>
             ))}

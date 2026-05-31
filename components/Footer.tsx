@@ -5,7 +5,7 @@ import { navLinks, siteConfig } from '@/data/site';
 export function Footer() {
   return (
     <footer className="border-t border-charcoal/10 bg-charcoal text-ivory">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.2fr_0.8fr_0.8fr_1fr] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.1fr_0.65fr_0.8fr_0.85fr_1fr] lg:px-8">
         <div>
           <p className="font-serif text-4xl">Belle Ame Salon</p>
           <p className="mt-4 max-w-sm text-sm leading-7 text-ivory/70">
@@ -67,6 +67,19 @@ export function Footer() {
               </div>
             ))}
           </dl>
+        </div>
+
+        <div>
+          <h2 className="text-sm font-bold uppercase tracking-[0.22em] text-champagne">Location Map</h2>
+          <div className="mt-5 overflow-hidden rounded-3xl border border-ivory/15 bg-ivory/5">
+            <iframe
+              title="Footer map showing Belle Ame Salon location"
+              src={siteConfig.mapEmbedUrl}
+              className="h-48 w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
         </div>
       </div>
       <div className="border-t border-ivory/10 px-4 py-6 text-center text-xs text-ivory/55 sm:px-6 lg:px-8">

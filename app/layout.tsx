@@ -84,17 +84,12 @@ const localBusinessSchema = {
   },
   areaServed: ['Shelby NC', 'Cleveland County NC'],
   sameAs: siteConfig.social.map((item) => item.href),
-  openingHoursSpecification: siteConfig.hours
-    .filter((item) => item.time !== 'Closed')
-    .map((item) => {
-      const times = item.time.replaceAll(' ', '').split('-');
-      return {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: item.day,
-        opens: times[0],
-        closes: times[1]
-      };
-    }),
+  openingHoursSpecification: [
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Tuesday', opens: '08:00', closes: '19:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Wednesday', opens: '08:00', closes: '18:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Thursday', opens: '08:00', closes: '19:00' },
+    { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Friday', opens: '08:00', closes: '17:00' }
+  ],
   makesOffer: [
     'Haircuts',
     'Hair Color',

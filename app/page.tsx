@@ -155,7 +155,7 @@ export default function HomePage() {
             <div className="grid gap-4">
               {testimonials.map((item, index) => (
                 <Reveal key={item.name} delay={index * 0.05} className="rounded-[1.6rem] border border-charcoal/10 bg-white p-6 shadow-sm">
-                  <p className="text-sm leading-7 text-charcoal/72">"{item.quote}"</p>
+                  <p className="text-sm leading-7 text-charcoal/72">&quot;{item.quote}&quot;</p>
                   <p className="mt-4 font-bold text-charcoal">{item.name}</p>
                   <p className="text-sm text-mocha">{item.service}</p>
                 </Reveal>

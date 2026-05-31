@@ -65,7 +65,7 @@ export default function AboutPage() {
         <Reveal className="mx-auto max-w-5xl text-center">
           <p className="text-xs font-bold uppercase tracking-[0.28em] text-champagne">Mission Statement</p>
           <blockquote className="mt-5 font-serif text-4xl leading-tight sm:text-6xl">
-            "To create beautiful results while providing exceptional service and genuine care."
+            &quot;To create beautiful results while providing exceptional service and genuine care.&quot;
           </blockquote>
         </Reveal>
       </section>

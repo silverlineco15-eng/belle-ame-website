@@ -24,7 +24,7 @@ export function TestimonialCarousel() {
         ))}
       </div>
       <blockquote className="mt-6 font-serif text-3xl leading-snug text-charcoal sm:text-4xl">
-        "{active.quote}"
+        &quot;{active.quote}&quot;
       </blockquote>
       <div className="mt-6 flex items-end justify-between gap-4">
         <div>
