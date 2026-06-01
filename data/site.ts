@@ -1,4 +1,4 @@
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://belleameshelby.com';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://silverlinestudios.net';
 
 export const siteConfig = {
   name: 'Belle Ame Salon',

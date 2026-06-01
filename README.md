@@ -38,7 +38,7 @@ This site is configured for Porkbun Static Hosting using Next.js static export.
 
 ```bash
 npm ci
-NEXT_PUBLIC_SITE_URL=https://your-domain.com npm run build:porkbun
+NEXT_PUBLIC_SITE_URL=https://silverlinestudios.net npm run build:porkbun
 ```
 
 Upload the contents of the generated `out/` directory to Porkbun, or configure Porkbun GitHub Connect to publish `out/`. See `PORKBUN_DEPLOYMENT.md` for details.

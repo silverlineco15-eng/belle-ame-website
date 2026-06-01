@@ -6,7 +6,7 @@ This project is configured for Porkbun Static Hosting as a static Next.js export
 
 ```bash
 npm ci
-NEXT_PUBLIC_SITE_URL=https://your-domain.com npm run build:porkbun
+NEXT_PUBLIC_SITE_URL=https://silverlinestudios.net npm run build:porkbun
 ```
 
 Next.js writes the static site to the `out/` directory.
@@ -22,7 +22,7 @@ Porkbun Static Hosting supports static HTML, CSS, JavaScript, and asset files. T
 If using Porkbun GitHub Connect, connect the production branch and configure the build to run:
 
 ```bash
-npm ci && NEXT_PUBLIC_SITE_URL=https://your-domain.com npm run build:porkbun
+npm ci && NEXT_PUBLIC_SITE_URL=https://silverlinestudios.net npm run build:porkbun
 ```
 
 Set the publish/output directory to:
@@ -33,7 +33,7 @@ out
 
 ## Important launch settings
 
-- Replace `https://your-domain.com` with the final Porkbun domain.
+- Replace `https://silverlinestudios.net` with the final Porkbun domain.
 - Keep `NEXT_PUBLIC_SITE_URL` set so canonical URLs, sitemap entries, robots.txt, and structured data use the live domain.
 - Replace placeholder phone, email, and social links before launch.
 - The booking widget is intentionally static and ready to replace with Square Appointments, Vagaro, or GlossGenius embed code.
