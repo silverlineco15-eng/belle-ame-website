@@ -31,3 +31,14 @@ npm run build
 - Contact phone/email/social links use launch-ready placeholders and should be swapped with verified salon-owned accounts before publishing.
 - SEO metadata, Open Graph tags, local business schema, sitemap, and robots routes are included.
 
+
+## Porkbun deployment
+
+This site is configured for Porkbun Static Hosting using Next.js static export.
+
+```bash
+npm ci
+NEXT_PUBLIC_SITE_URL=https://your-domain.com npm run build:porkbun
+```
+
+Upload the contents of the generated `out/` directory to Porkbun, or configure Porkbun GitHub Connect to publish `out/`. See `PORKBUN_DEPLOYMENT.md` for details.
