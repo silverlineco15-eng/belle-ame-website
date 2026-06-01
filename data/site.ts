@@ -1,9 +1,11 @@
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://belleameshelby.com';
+
 export const siteConfig = {
   name: 'Belle Ame Salon',
   tagline: 'Beautiful Hair. Genuine Confidence.',
   description:
     'Professional hair services, personalized care, and a salon experience designed around you in Shelby, North Carolina.',
-  url: 'https://belleameshelby.com',
+  url: siteUrl,
   address: {
     street: '425 Cherryville Rd Suite B',
     city: 'Shelby',
